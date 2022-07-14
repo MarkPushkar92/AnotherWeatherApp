@@ -9,6 +9,19 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    
+    var weatherModel: Weather?
+    
+    func refreshLabels() {
+        cityLabel.text = weatherModel?.name
+        statusLabel.text = weatherModel?.conditionString
+        degreesLabel.text = "\(weatherModel?.temp ?? 0)"
+        minDayTempValueLabel.text = "\(weatherModel?.tempMin ?? 0)"
+        maxDayTempValueLabel.text = "\(weatherModel?.tempMax ?? 0)"
+        windSpeedValueLabel.text = "\(weatherModel?.windSpeed ?? 0)"
+        pressureValueLabel.text = "\(weatherModel?.pressureMm ?? 0)"
+    }
+    
     //MARK: Labels
     
     var cityLabel: UILabel = {
@@ -17,6 +30,13 @@ class ViewController: UIViewController {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = .systemFont(ofSize: 16)
         return label
+    }()
+    
+    var image: UIImageView = {
+        let image = UIImageView()
+        image.translatesAutoresizingMaskIntoConstraints = false
+        image.sizeToFit()
+        return image
     }()
     
     var statusLabel: UILabel = {
@@ -147,6 +167,7 @@ class ViewController: UIViewController {
 
         statusAndTempStackView.addArrangedSubview(statusLabel)
         statusAndTempStackView.addArrangedSubview(degreesLabel)
+        statusAndTempStackView.addArrangedSubview(image)
         view.addSubviews(weatherLabelsStackView, weatherValueLabelsStackView, statusAndTempStackView, cityLabel)
      
         let constraints = [

@@ -18,6 +18,7 @@
 		6396B159287D76DD00B93AA9 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6396B158287D76DD00B93AA9 /* NetworkService.swift */; };
 		6396B15B287D780300B93AA9 /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6396B15A287D780300B93AA9 /* WeatherData.swift */; };
 		6396B15D287D7C9400B93AA9 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6396B15C287D7C9400B93AA9 /* Weather.swift */; };
+		639CEB69287E9AC700A94977 /* GetCitiesWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639CEB68287E9AC700A94977 /* GetCitiesWeather.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		6396B158287D76DD00B93AA9 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		6396B15A287D780300B93AA9 /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
 		6396B15C287D7C9400B93AA9 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		639CEB68287E9AC700A94977 /* GetCitiesWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCitiesWeather.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				6396B158287D76DD00B93AA9 /* NetworkService.swift */,
 				6396B15C287D7C9400B93AA9 /* Weather.swift */,
 				6396B15A287D780300B93AA9 /* WeatherData.swift */,
+				639CEB68287E9AC700A94977 /* GetCitiesWeather.swift */,
 			);
 			path = "Model and Networking";
 			sourceTree = "<group>";
@@ -168,6 +171,7 @@
 				6396B156287D765A00B93AA9 /* Common.swift in Sources */,
 				632CC82128781938008633F3 /* TableViewController.swift in Sources */,
 				6396B15B287D780300B93AA9 /* WeatherData.swift in Sources */,
+				639CEB69287E9AC700A94977 /* GetCitiesWeather.swift in Sources */,
 				6396B159287D76DD00B93AA9 /* NetworkService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

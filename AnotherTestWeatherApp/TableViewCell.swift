@@ -9,7 +9,37 @@ import UIKit
 
 class TableViewCell: UITableViewCell {
     
-    var cityLabel: UILabel = {
+    //MARK: Accessable UI Elements
+    
+    var temperature : String {
+        get {
+            return degreesLabel.text ?? ""
+        }
+        
+        set(newValue) {
+            degreesLabel.text = newValue
+        }
+    }
+    
+    var city: String {
+        get {
+            return cityLabel.text ?? ""
+        }
+        set(newValue) {
+            cityLabel.text = newValue
+        }
+    }
+    
+    var status: String {
+        get {
+            return statusLabel.text ?? ""
+        }
+        set(newValue) {
+            statusLabel.text = newValue
+        }
+    }
+    
+   private var cityLabel: UILabel = {
         let label = UILabel()
         label.text = "Vladivostok"
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -17,7 +47,7 @@ class TableViewCell: UITableViewCell {
         return label
     }()
     
-    var statusLabel: UILabel = {
+   private var statusLabel: UILabel = {
         let label = UILabel()
         label.text = "Status"
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -25,7 +55,7 @@ class TableViewCell: UITableViewCell {
         return label
     }()
     
-    var degreesLabel: UILabel = {
+    private var degreesLabel: UILabel = {
         let label = UILabel()
         label.text = "11"
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -35,7 +65,6 @@ class TableViewCell: UITableViewCell {
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-       
         setupViews()
     }
     
