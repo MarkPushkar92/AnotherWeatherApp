@@ -68,7 +68,13 @@ class TableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        navigationController?.pushViewController(ViewController(), animated: true)
+        
+        guard let indexPath = tableView.indexPathForSelectedRow else {return}
+        let cityWeather = citiesArray[indexPath.row]
+        let vc = ViewController()
+        vc.weatherModel = cityWeather
+        
+        navigationController?.pushViewController(vc, animated: true)
     }
 
 }
