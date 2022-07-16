@@ -74,22 +74,23 @@ class TableViewCell: UITableViewCell {
     
     private func setupViews() {
         contentView.addSubviews(cityLabel, statusLabel, degreesLabel)
+        contentView.backgroundColor = .systemMint
         
         let constraints = [
             cityLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 10),
             cityLabel.topAnchor.constraint(equalTo: contentView.topAnchor),
             cityLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
-            cityLabel.widthAnchor.constraint(equalToConstant: 150),
-            
-            statusLabel.widthAnchor.constraint(equalToConstant: 60),
+            cityLabel.trailingAnchor.constraint(equalTo: statusLabel.leadingAnchor),
+         
             statusLabel.topAnchor.constraint(equalTo: contentView.topAnchor),
             statusLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
-            statusLabel.trailingAnchor.constraint(equalTo: degreesLabel.leadingAnchor ),
+            statusLabel.trailingAnchor.constraint(equalTo: degreesLabel.leadingAnchor, constant: -10 ),
+            statusLabel.leadingAnchor.constraint(equalTo: cityLabel.trailingAnchor),
             
             degreesLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -10),
             degreesLabel.topAnchor.constraint(equalTo: contentView.topAnchor),
             degreesLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
-            degreesLabel.widthAnchor.constraint(equalToConstant: 40)
+            degreesLabel.leadingAnchor.constraint(equalTo: statusLabel.trailingAnchor, constant: 10)
             
             ]
         

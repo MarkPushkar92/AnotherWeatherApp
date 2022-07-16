@@ -9,7 +9,7 @@ import Foundation
 
 struct Weather {
     
-    var name: String = "Пожалуйста, подождите"
+    var name: String = "Загрузка"
     var temp: Int = 0
     var conditionCode: String = ""
     var url: String = ""
@@ -41,7 +41,7 @@ struct Weather {
         case "thunderstorm-with-rain" : return "дождь с грозой"
         case "thunderstorm-with-hail" : return "гроза с градом"
             
-        default: return "Ожидание прогноза..."
+        default: return "..."
         }
     }
     

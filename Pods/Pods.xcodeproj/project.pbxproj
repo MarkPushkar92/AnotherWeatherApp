@@ -98,7 +98,7 @@
 		5CA217BC0F513F18F8E7EE45B905E63C /* PathDLexer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PathDLexer.swift; path = SwiftSVG/SVG/Iterators/PathDLexer.swift; sourceTree = "<group>"; };
 		5FD8B28C094614F05B8DEE7D155A5D5C /* SVGParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SVGParser.swift; path = SwiftSVG/SVG/Parser/SVGParser.swift; sourceTree = "<group>"; };
 		62175498EE04D12F6491692BEE2A0D22 /* SVGContainerElement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SVGContainerElement.swift; path = SwiftSVG/SVG/Elements/SVGContainerElement.swift; sourceTree = "<group>"; };
-		62DF1BDA41B723D7B0440FD765F1C141 /* SwiftSVG */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftSVG; path = SwiftSVG.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		62DF1BDA41B723D7B0440FD765F1C141 /* SwiftSVG.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftSVG.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		63185CD90E520DE73BD48B1589B08E1E /* String+Trim.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+Trim.swift"; path = "SwiftSVG/SVG/Helpers/String+Trim.swift"; sourceTree = "<group>"; };
 		65DECD9C4E84147D7ACB416F5A0B9AE6 /* SVGCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SVGCache.swift; path = SwiftSVG/SVG/Cache/SVGCache.swift; sourceTree = "<group>"; };
 		66219FD2F02591BF18998006F67F47CC /* SwiftSVG-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftSVG-dummy.m"; sourceTree = "<group>"; };
@@ -120,7 +120,7 @@
 		8DB5FC107C7A71E09A87EEFE2054B4F1 /* Pods-AnotherTestWeatherApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AnotherTestWeatherApp-frameworks.sh"; sourceTree = "<group>"; };
 		8EB3B797724F35EE011FD8829E24FE57 /* SVGEllipse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SVGEllipse.swift; path = SwiftSVG/SVG/Elements/SVGEllipse.swift; sourceTree = "<group>"; };
 		98B972FF6F3D35035D70DF6E011A3D96 /* Scalar+FromByteArray.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Scalar+FromByteArray.swift"; path = "SwiftSVG/SVG/Helpers/Scalar+FromByteArray.swift"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9FC19A9D3B158380E770E3F6C95679C3 /* Pods-AnotherTestWeatherApp */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-AnotherTestWeatherApp"; path = Pods_AnotherTestWeatherApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1F113CFB0FC93E4F027173A0E8C64DB /* Strokable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Strokable.swift; path = SwiftSVG/SVG/Attributes/Strokable.swift; sourceTree = "<group>"; };
 		A33E7DE0454F4A586B3EB8149824F7DE /* SVGRectangle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SVGRectangle.swift; path = SwiftSVG/SVG/Elements/SVGRectangle.swift; sourceTree = "<group>"; };
@@ -250,7 +250,6 @@
 				8880A40608F2C45906C482A845273B45 /* Unown.swift */,
 				B73F5F33AEC86397B5339C4F8F54EBB4 /* Support Files */,
 			);
-			name = SwiftSVG;
 			path = SwiftSVG;
 			sourceTree = "<group>";
 		};
@@ -292,7 +291,7 @@
 			isa = PBXGroup;
 			children = (
 				9FC19A9D3B158380E770E3F6C95679C3 /* Pods-AnotherTestWeatherApp */,
-				62DF1BDA41B723D7B0440FD765F1C141 /* SwiftSVG */,
+				62DF1BDA41B723D7B0440FD765F1C141 /* SwiftSVG.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -342,7 +341,7 @@
 			);
 			name = SwiftSVG;
 			productName = SwiftSVG;
-			productReference = 62DF1BDA41B723D7B0440FD765F1C141 /* SwiftSVG */;
+			productReference = 62DF1BDA41B723D7B0440FD765F1C141 /* SwiftSVG.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		6BFEE84329A721D8EB18C50FD861AAEF /* Pods-AnotherTestWeatherApp */ = {
@@ -604,7 +603,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/SwiftSVG/SwiftSVG-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/SwiftSVG/SwiftSVG-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -738,7 +737,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/SwiftSVG/SwiftSVG-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/SwiftSVG/SwiftSVG-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
